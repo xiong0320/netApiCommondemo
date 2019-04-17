@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_school"
+        android:icon="@drawable/ic_school_24dp"
+        android:title="学校"/>
+    <item
+        android:id="@+id/nav_grade"
+        android:icon="@drawable/ic_school_24dp"
+        android:title="年级"/>
+    <item
+        android:id="@+id/nav_class"
+        android:icon="@drawable/ic_school_24dp"
+        android:title="班级"/>
+    <item
+        android:id="@+id/nav_subject"
+        android:icon="@drawable/ic_school_24dp"
+        android:title="科目"/>
+</group>
+    <item android:title="其它">
+        <menu>
+            <item
+            android:title="设置"
+            android:icon="@drawable/ic_school_24dp"></item>
+            <item
+                android:title="关于我们"
+                android:icon="@drawable/ic_school_24dp"></item>
+        </menu>
+    </item>
+
+</menu>
