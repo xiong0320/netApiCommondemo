@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         listPopupWindow = null;
         requestPermission();
+        getApplicationContext().startActivity();
     }
 
     @Override
@@ -117,28 +118,6 @@ public class MainActivity extends AppCompatActivity {
         listPopupWindow.removeCustomSpinner();
     }
 
-    //    @OnClick(R.id.show_pop)
-//    public void showListPopupwindow(View view){
-//        String[] datas = {/*"条目0","条目1","条目2","条目3","条目4","条目0","条目1","条目2",
-//                "条目3","条目4","条目1","条目2","条目3","条目4"*/};
-//        ListAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,datas);
-//        ListPopupWindow listPopupWindow = new ListPopupWindow(this);
-//        int left = view.getLeft();
-//        int top = view.getTop();
-//        listPopupWindow.setHeight(500);
-//        listPopupWindow.setAdapter(adapter);
-//        listPopupWindow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                String item = parent.getItemAtPosition(position).toString();
-//                listPopupWindow.dismiss();
-//                show_pop.setText(item);
-//            }
-//        });
-//        listPopupWindow.setAnchorView(view);
-//
-//        listPopupWindow.show();
-//    }
 
     void postDemo(){
         HashMap<String,Object> params = new HashMap<>();
