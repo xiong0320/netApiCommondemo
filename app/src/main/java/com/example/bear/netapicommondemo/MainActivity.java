@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         listPopupWindow = null;
         requestPermission();
-        getApplicationContext().startActivity();
     }
 
     @Override
